@@ -1,0 +1,96 @@
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        margin: 25px;
+        background-image: url("BG.jpg");
+        background-repeat: no-repeat;
+        background-size:cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .container{
+        background-color: #fff;
+        font-size: 25px;
+        font-family: 'Jost', sans-serif;
+        width: 500px;
+        margin: 25px;
+        margin-top: 25px;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 3px solid black;
+        border-radius: 15px;
+        animation: ryt 1s ease forwards;
+    }
+    @keyframes ryt {
+        0%{
+            opacity: 0;
+            transform: translateX(-100%);
+        }
+        100%{
+            opacity: 1;
+            transform: translateX(0%);
+
+        }
+        
+    }
+    #h{
+        animation: upr 3s ease forwards;
+        /* animation-delay: 1s; */
+        /* animation-name: blinker;
+        animation-duration: 0.6s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-delay: 1s; */
+    }
+    @keyframes upr {
+        0%{
+            opacity: 0;
+            transform: translateY(-100%);
+        }
+        100%{
+            opacity: 1;
+            transform: translateY(0%);
+        }
+        
+    }
+    @keyframes blinker {
+        0%{
+            opacity: 1;
+        }
+        100%{
+            opacity: 0;
+        }
+    }
+    #btn{
+        height: 35px;
+        width: 180px;
+        font-weight: bold;
+        font-family: 'Jost', sans-serif;
+        cursor: pointer;
+        border-radius: 20px;
+        transition: 0.3s ease-in-out;
+        animation: lwr 3s ease forwards;
+    }
+    @keyframes lwr {
+        0%{
+            opacity: 0;
+            display: none;
+            transform: translateX(100%);
+        }
+        100%{
+            opacity: 1;
+            transform: translateX(0%);
+        }
+        
+    }
+    #btn:hover{
+        background-color: rgb(70, 189, 70);
+    }
